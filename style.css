@@ -1,36 +1,40 @@
+:root{
+    --bianco: #fff;
+    --viola: #0f041a;
+    --grigio:#2f4f4fa7;
+    --violaOP: #8419ff;
+}
+
 body{
     margin: 0;
-    background-color:#0f041a;
+    background-color: var(--viola);
 }
 p{
-    color: white;
+    color: var(--bianco);
 }
+a{
+    color: var(--bianco);
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* Sezione NavBar */
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
     position: fixed;
-    z-index: 2;
-    background-color: rgba(47, 79, 79, 0.655);
+    z-index: 1;
+    background-color: var(--grigio);
     width: 80%;
     margin: 10px 10%;
     border-radius: 10px;
 }
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 10px;
-}
-.navlink-2{
-    flex: 2;
-    display: flex;
-    justify-content: space-around;
-}
 .logo{
-    padding: 0 300px;
+    flex: 3;
+    justify-content: center;
 }
 .center{
     position: absolute;
@@ -38,19 +42,22 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Sezione Header */
+
 header{
     position: relative;
     width: 100%;
+    color: var(--bianco);
 }
 header img{
     width: 100%;
 }
-header h1{
-    color: #fff;
+h1{
     width: 60%;
     height: 40%;
     place-items: center;
-    font-size: 40px;
+    font-size: 400%;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
@@ -64,16 +71,14 @@ header h1{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
 }
 .box{
-    border: 1px solid white;
+    border: 1px solid var(--bianco);
     border-radius: 20px;
     padding: 10px;
     margin: 40px;
 }
 header a{
-    color: #fff;
     width: 50%;
     height: 50%;
     text-decoration: none;
@@ -143,4 +148,9 @@ h2{
     float:left;
     margin-right: 20px;
     border-radius: 50%;
+}
+footer{
+    width: 100%;
+    bottom: auto;
+    opacity: 50%;
 }
