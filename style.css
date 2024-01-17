@@ -3,13 +3,13 @@
     --violaDark: #0f041a;
     --grigio:#2f4f4fa7;
     --violaOP: #8419ff;
-    --viola: #240844;
+    --viola: #1e053a;
 }
 @font-face {
-        font-family: Oxigen; src: url(./svg/Oxygen-Regular.ttf);
+        font-family: Oxigen; src: url(./font/Oxygen-Regular.ttf);
 }
 @font-face {
-    font-family: Title; src:url(./svg/BebasNeue-Regular.ttf);
+    font-family: Title; src:url(./font/BebasNeue-Regular.ttf);
 
 }
 * {
@@ -23,7 +23,7 @@ body{
 section{
     margin: 200px 0px;
 }
-p, a, h1, h3{
+p, a, h1, h3, h4{
     color: var(--bianco);
 }
 a{
@@ -51,6 +51,7 @@ nav{
     border-radius: 10px;
 }
 
+
 .logo{
     flex: 3;
     justify-content: center;
@@ -63,16 +64,14 @@ nav{
 }
 .grid-template-2-cols {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
-.relative{
-    position: relative;
-}
-.border{
-    border: 1px solid var(--bianco);
-    padding: 20px 50px;
-    margin: 40px;
-}
+.item {
+    border: 1px solid var(--violaOP);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
 
 /* Sezione Header */
 
@@ -94,8 +93,9 @@ h1{
 }
 
 header a{
-    width: 50%;
-    height: 50%;
+    border: 1px solid var(--bianco); 
+    padding: 20px 50px;
+    margin: 40px;
 }
 
 h2,h3{
@@ -114,6 +114,15 @@ h2 {
 #about,#work,#customer,#services{
     text-align: center;
 }
+/* Sezione About */
+
+#about {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-content:space-around;
+align-items: center;
+font-size: large;
+}
 
 /* Sezione Work */
 
@@ -125,9 +134,8 @@ h2 {
 footer{
     width: 100%;
     bottom: auto;
-    opacity: 60%;
+    opacity: 40%;
 }
-
 
 /* View Responsiva */
 @media screen and (max-width: 768px) {

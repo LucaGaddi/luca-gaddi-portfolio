@@ -17,30 +17,38 @@
 
 
     <!-- NAVBAR -->
-    <nav>
-        <div>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
-        </div>
-        <div>
-            <img class="logo" src="" alt="">
-        </div>
-        <div style="justify-content: right;">
-            <a href="">Contact</a>
+    <nav class="navbar">
+        <div class="container-fluid">
+
+            <div class="collapse.navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+            </div>
+            <div>
+                <a class="navbar-brand" href="#">LOGO</a>
+            </div>
+            <div style="justify-content: right">
+                <a href="">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- HEADER -->
 
-    <header class="relative">
+    <header>
         <div class="div-img">
-            <img src="./img/rocket.jpg" alt="bg">
+            <img style="position:relative" src="./img/rocket.jpg" alt="bg">
         </div>
         <h1>Dive into my universe</h1>
         <div style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%)">
-            <a class="border" href="">Dive-in</a>
-            <a class="border" href="">Service</a>
+            <a href=""> Dive-in</a>
+            <a href=""> Services</a>
         </div>
 
     </header>
@@ -48,66 +56,88 @@
     <!-- ABOUT -->
 
     <main>
-        <section class="grid-template-2-cols" id="about">
+        <section id="about">
+
             <div class="div-img">
                 <img src="./img/profilo.jpg" alt="profile">
             </div>
-            <div class="relative">
-                <div class="center">
-                    <h2>ABOUT</h2>
+            <div>
+                <h2>ABOUT</h2>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit illo odio sapiente ea
-                        molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
-                        eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum fugit illo odio sapiente ea
-                        molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
-                        eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum fugit illo odio sapiente ea
-                        molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
-                        eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum fugit illo odio sapiente ea
-                        molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
-                        eligendi ipsa sint cumque inventore!
-                    </p>
-                </div>
+                <p style="margin: 0 30px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit illo odio sapiente ea
+                    molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
+                    eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum fugit illo odio sapiente ea
+                    molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
+                    eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum fugit illo odio sapiente ea
+                    molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
+                    eligendi ipsa sint cumque inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum fugit illo odio sapiente ea
+                    molestias quia deserunt vero cupiditate! Voluptates distinctio voluptatem quod neque harum
+                    eligendi ipsa sint cumque inventore!
+                </p>
             </div>
+
         </section>
 
         <!-- WORK -->
-        <section id="work">
-            <h2>WORK</h2>
-            <h3>Explore my universe</h3>
+        <section class="container" id="work">
+            <div>
+                <h2>WORK</h2>
+                <h3>Explore my universe</h3>
+            </div>
         </section>
 
         <!-- CUSTOMER -->
 
-        <section id="customer">
-            <h2>CUSTOMER</h2>
-            <h3>Trusted by the <br> kindest clients</h3>
-            
-        <!-- SERVICES -->
-
-
-        <section id="services">
-            <h2>SERVICES</h2>
-            <h3>Designing dreams,<br> one website at a time.</h3>
+        <section class="container" id="customer">
             <div>
-                <h3></h3>
-                <p></p>
+                <h2>CUSTOMER</h2>
+                <h3>Trusted by the <br> kindest clients</h3>
             </div>
-        </section>
+
+            <!-- SERVICES -->
+
+
+            <section id="services">
+                <div>
+                    <h2>SERVICES</h2>
+                    <h3>Designing dreams,<br> one website at a time.</h3>
+                </div>
+
+                <div class="grid-template-2-cols">
+
+                    <div class="item">
+                        <h4>Website</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus eaque alias id
+                            autem enim, corporis repudiandae ab deleniti consectetur doloribus dolor accusantium,
+                            officia officiis placeat, provident ullam reiciendis? Voluptate.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h4>Website</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maxime neque,
+                            amet nisi architecto, sapiente autem sed atque quas dolores minima, aut a delectus!
+                            Corrupti maiores assumenda ea quo esse.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
 
 
     </main>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
 
-        <footer>
-            <div class="div-img">
-                <img src="./img/sky.jpg" alt="sky">
-            </div>
-        </footer>
+    <footer>
+        <div class="div-img">
+            <img src="./img/sky.jpg" alt="sky">
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
