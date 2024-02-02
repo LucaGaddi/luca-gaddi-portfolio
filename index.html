@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!--Import Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Import Swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--Import CSS-->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Luca Gaddi Portfolio</title>
 </head>
 
@@ -15,40 +21,30 @@
 <body>
     <!-- BRANCH DEV -->
 
-
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container-fluid">
+    <nav>
 
-            <div class="collapse.navbar-collapse" id="navbarSupportedContent">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#services">Services</a>
-            </div>
-            <div>
-                <a class="navbar-brand" href="#">LOGO</a>
-            </div>
-            <div style="justify-content: right">
-                <a href="">Contact</a>
-            </div>
+
+        <div class="link">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
         </div>
+        <div><img style="width: 20%; border-radius: 50%;" src="./img/logo.png" alt="logo"></div>
+        <div style="justify-content: right">
+            <a href="#contact">Contact</a>
+        </div>
+
+
     </nav>
 
     <!-- HEADER -->
 
     <header>
-        <div class="div-img">
-            <img style="position:relative" src="./img/rocket.jpg" alt="bg">
-        </div>
         <h1>Dive into my universe</h1>
-        <div style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%)">
-            <a href=""> Dive-in</a>
-            <a href=""> Services</a>
+        <div class="center">
+            <a href="#work"> Dive-in</a>
+            <a href="#services"> Services</a>
         </div>
 
     </header>
@@ -83,51 +79,240 @@
         </section>
 
         <!-- WORK -->
-        <section class="container" id="work">
+        <section id="work">
             <div>
                 <h2>WORK</h2>
                 <h3>Explore my universe</h3>
             </div>
+
+
+            <div class="carosel">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+
+                                    <div class="image-prj">
+                                        <img class="image" src="./img/skyscraper.jpg" alt="Avatar">
+                                        <div class="blur-effect">
+                                            <h4>Assagiami</h4>
+                                            <p>Project description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtm"></div>
+                    <div class="swiper-button-prev swiper-navBtm"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
         </section>
 
         <!-- CUSTOMER -->
 
-        <section class="container" id="customer">
+        <section id="customer">
             <div>
                 <h2>CUSTOMER</h2>
                 <h3>Trusted by the <br> kindest clients</h3>
             </div>
 
-            <!-- SERVICES -->
+            <div class="carosel">
+                <div class="slide-container swiper">
+                    <div class="slide-customer">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div style="opacity: 0.5;" class="image-content item">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem enim
+                                        veniam vero? Consequatur rem adipisci cupiditate facilis, nam ipsa blanditiis in
+                                        facere quia reiciendis, a repellat, molestiae porro nisi!</p>
+                                    <div class="customer-profile">
+                                        <img class="customer-img" src="./img/avatar.jpg" alt="">
+                                        <p>Nome Cognome</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <div style="opacity: 0.5;" class="image-content item">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem enim
+                                        veniam vero? Consequatur rem adipisci cupiditate facilis, nam ipsa blanditiis in
+                                        facere quia reiciendis, a repellat, molestiae porro nisi!</p>
+                                    <div class="customer-profile">
+                                        <img class="customer-img" src="./img/avatar.jpg" alt="">
+                                        <p>Nome Cognome</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <div style="opacity: 0.5;" class="image-content item">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem enim
+                                        veniam vero? Consequatur rem adipisci cupiditate facilis, nam ipsa blanditiis in
+                                        facere quia reiciendis, a repellat, molestiae porro nisi!</p>
+                                    <div class="customer-profile">
+                                        <img class="customer-img" src="./img/avatar.jpg" alt="">
+                                        <p>Nome Cognome</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <div style="opacity: 0.5;" class="image-content item">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem enim
+                                        veniam vero? Consequatur rem adipisci cupiditate facilis, nam ipsa blanditiis in
+                                        facere quia reiciendis, a repellat, molestiae porro nisi!</p>
+                                    <div class="customer-profile">
+                                        <img class="customer-img" src="./img/avatar.jpg" alt="">
+                                        <p>Nome Cognome</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
 
 
-            <section id="services">
-                <div>
-                    <h2>SERVICES</h2>
-                    <h3>Designing dreams,<br> one website at a time.</h3>
+        <!-- SERVICES -->
+
+
+        <section id="services">
+            <div>
+                <h2>SERVICES</h2>
+                <h3>Designing dreams,<br> one website at a time.</h3>
+            </div>
+
+            <div class="grid-template-2-cols">
+
+                <div class="item">
+                    <h3 style="margin-top: 10px;">Website</h3>
+                    <ul style="float: left; font-size: larger;">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
                 </div>
 
-                <div class="grid-template-2-cols">
-
-                    <div class="item">
-                        <h4>Website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus eaque alias id
-                            autem enim, corporis repudiandae ab deleniti consectetur doloribus dolor accusantium,
-                            officia officiis placeat, provident ullam reiciendis? Voluptate.
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <h4>Website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maxime neque,
-                            amet nisi architecto, sapiente autem sed atque quas dolores minima, aut a delectus!
-                            Corrupti maiores assumenda ea quo esse.
-                        </p>
-                    </div>
+                <div class="item">
+                    <h3 style="margin-top: 10px;">Website</h3>
+                    <ul style="float: left; font-size: larger;">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
                 </div>
+            </div>
 
-            </section>
+        </section>
 
+
+        <!-- CONTACT -->
+
+        <section class="grid-template-2-cols" id="contact">
+            <div style="text-align: center;">
+                <h2>CONTACT</h2>
+                <h3>Got a problem to solve?</h3>
+                <p>Get your space suit ready and tell me your ideas to develop your dream website.</p>
+            </div>
+            <div>
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        <p style="font-size: smaller;">NAME</p>
+                    </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        <p style="font-size: smaller;">EMAIL</p>
+                    </label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        <p style="font-size: smaller;">MESSAGE</p>
+                    </label>
+                    <textarea class="form-control"></textarea>
+
+                    <button style="margin-top: 20px; float: right; text-align: center" type="button"
+                        class="btn btn-dark">
+                        <div style="display: flex;">
+                            <p style="font-size: smaller; margin-right: 5px;">SEND MESSAGE</p>
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -140,10 +325,20 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 
 </body>
+
+
+<!-- Bootstrap Js -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<!--Swiper Js-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!--Javascript-->
+<script src="js/script.js"></script>
 
 </html>
