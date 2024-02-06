@@ -7,17 +7,19 @@
 }
 
 * {
-    font-family: Oxigen;
+    font-family: 'Oxigen';
 }
 
 @font-face {
-    font-family: Oxigen;
-    src: url(font\Oxygen-Regular.ttf);
+    font-family: 'Oxigen';
+    src: url('/font/Oxygen-Regular.ttf');
+    src: local('Oxygen-Regular'), url('Oxygen-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: Title;
-    src: url(font\BebasNeue-Regular.ttf);
+    font-family: 'Title';
+    src: url('/font/BebasNeue-Regular.ttf');
+    src: local('BebasNeue-Regular'), url('BebasNeue-Regular.ttf') format('truetype');
 
 }
 
@@ -40,11 +42,16 @@ li {
     color: var(--bianco);
 }
 
-li,p{
+li,
+p {
     font-size: larger;
 }
 
-ul{
+li {
+    margin-bottom: 20px;
+}
+
+ul {
     margin-left: 20px;
 }
 
@@ -138,12 +145,14 @@ h1 {
 #introBtn {
     display: flex;
     justify-content: space-around;
+    margin-top: 80px;
 }
 
 header a {
     border: 1px solid var(--bianco);
     padding: 20px 50px;
     margin-top: 10px;
+    font-size: x-large;
 }
 
 h2,
@@ -153,7 +162,7 @@ h3 {
 }
 
 h2 {
-    font-size:xx-large;
+    font-size: xx-large;
     background-color: var(--viola);
     color: var(--violaOP);
     border: 1px solid var(--violaOP);
@@ -212,7 +221,7 @@ h2 {
 
 }
 
-/* Quando il cursore passa sopra rendi visibile il testo*/
+/* Quando il cursore passa sopra l'immagine rendi visibile il testo e opacizza lo sfondo*/
 
 .image-prj:hover .blur-effect {
     opacity: 1;
@@ -223,6 +232,8 @@ h2 {
     -webkit-filter: blur(5px);
     transition: -webkit-filter 0.5s ease-in;
 }
+
+/* Swiper */
 
 .carosel {
     min-width: 100vh;
@@ -298,11 +309,15 @@ h2 {
     background-color: var(--violaOP);
 }
 
-.carosel p{
-    font-size: small;
+.carosel p {
+    font-size: medium;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
+    .carosel {
+        min-width: 100vw;
+    }
+
     .slide-content {
         margin: 0 10px;
     }
@@ -310,6 +325,10 @@ h2 {
     .swiper-navBtm {
         display: none;
 
+    }
+
+    .image {
+        display: inline;
     }
 }
 
@@ -322,17 +341,30 @@ h2 {
         display: none;
 
     }
+
+    .carosel {
+        min-width: 100vw;
+    }
+
+    .image {
+        display: inline;
+    }
 }
 
 /* Sezione Customer */
 
 .customer-profile {
     display: flex;
+    align-items: center;
+}
+
+.customer-profile p {
+    margin: 0;
 }
 
 .customer-img {
-    width: 35px;
-    height: 35px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     margin: 0 10px;
 }
@@ -341,13 +373,30 @@ h2 {
     padding: 10px;
 }
 
-/* Sezione Services */
-
-.item {
+.item,
+.services-box {
     border: 1px solid var(--violaOP);
     border-radius: 10px;
     margin: 20px;
 }
+
+.item {
+    background-image: url(/img/nebulosa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sezione Services */
+
+.services-box {
+    height: 600px;
+    background-image: url(/img/deepSpace.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
 
 /* Sezione Contact */
 
@@ -361,25 +410,25 @@ footer {
     opacity: 40%;
 }
 
-#social-icon{
+#social-icon {
     color: var(--bianco);
     text-align: center;
+    margin: 50px;
 }
 
-#social-icon i{
+#social-icon i {
     margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
 
     nav {
-        width: 80%;
         height: 40px;
         align-items: center;
     }
 
     .logo {
-    display: none;
+        display: none;
     }
 
     .grid-template-2-cols {
@@ -407,18 +456,27 @@ footer {
         margin-bottom: 50px;
     }
 
+    #social-icon a {
+        display: block;
+        font-size: small;
+        font-size: larger;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
 
     nav {
-        width: 80%;
         height: 40px;
         align-items: center;
     }
 
+    nav a {
+        font-size: 10px;
+    }
+
     h1 {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     h2 {
@@ -442,4 +500,8 @@ footer {
         margin-bottom: 30px;
     }
 
+    #social-icon a {
+        display: block;
+        font-size: small;
+    }
 }

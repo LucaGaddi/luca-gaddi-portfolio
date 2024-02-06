@@ -26,7 +26,7 @@ var swiper = new Swiper(".slide-content", {
     },
 
     breakpoints: {
-        0: {
+        1: {
             slidesPerView: 1,
         },
         520: {
@@ -50,7 +50,10 @@ var swiper = new Swiper(".slide-customer", {
     effect: "slide",
 
     breakpoints: {
-        0: {
+        1: {
+            slidesPerView: 1,
+        },
+        520: {
             slidesPerView: 2,
         },
         950: {
