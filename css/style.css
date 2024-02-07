@@ -12,14 +12,12 @@
 
 @font-face {
     font-family: 'Oxigen';
-    src: url('/font/Oxygen-Regular.ttf');
-    src: local('Oxygen-Regular'), url('Oxygen-Regular.ttf') format('truetype');
+    src: local('Oxygen-Regular'), url('../font/Oxygen-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Title';
-    src: url('/font/BebasNeue-Regular.ttf');
-    src: local('BebasNeue-Regular'), url('BebasNeue-Regular.ttf') format('truetype');
+    src: local('BebasNeue-Regular'), url('../font/BebasNeue-Regular.ttf') format('truetype');
 
 }
 
@@ -132,7 +130,7 @@ h1 {
     max-width: 60%;
     max-height: 40%;
     place-items: center;
-    font-size: 600%;
+    font-size: 700%;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
@@ -162,7 +160,7 @@ h3 {
 }
 
 h2 {
-    font-size: xx-large;
+    font-size: x-large;
     background-color: var(--viola);
     color: var(--violaOP);
     border: 1px solid var(--violaOP);
@@ -390,10 +388,7 @@ h2 {
 
 .services-box {
     height: 600px;
-    background-image: url(/img/deepSpace.jpg);
-    background-size: cover;
-    background-position: center;
-
+    background: none;
 }
 
 
