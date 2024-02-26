@@ -138,6 +138,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Title;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #introBtn {
@@ -399,6 +401,49 @@ h2 {
     width: 90%;
 }
 
+.popup{
+    width: 450px;
+    background: var(--viola);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-0%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%,-0%)scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-family: 'Title';
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: var(--bianco);
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sezione Footer */
+
 footer {
     width: 100%;
     bottom: auto;
@@ -431,7 +476,7 @@ footer {
     }
 
     h1 {
-        font-size: 400%;
+        font-size: 500%;
     }
 
     h2 {
@@ -471,7 +516,7 @@ footer {
     }
 
     h1 {
-        font-size: 300%;
+        font-size: 400%;
     }
 
     h2 {

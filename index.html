@@ -294,6 +294,14 @@
                     <p>Get your space suit ready and tell me your ideas to develop your dream website.</p>
                 </div>
                 <div>
+                    <div style="position: relative;" class="container">
+                        <div id="popup" class="popup">
+                            <img src="./img/rocket-icon.jpg" alt="">
+                            <h3>Thank You!!!</h3>
+                            <p>The launch was a success. <br> Your message is traveling through Cyberspace!</p>
+                            <button onclick="closePopup()" >OK</button>
+                        </div>
+                    </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">
                             <p style="font-size: smaller;">NAME</p>
@@ -310,12 +318,11 @@
                         <label for="message" class="form-label">
                             <p style="font-size: smaller;">MESSAGE</p>
                         </label>
-                        <textarea class="form-control"></textarea>
-
+                        <textarea id="textarea" class="form-control"></textarea>
                     </div>
                     <div style="display: flex; align-items: center; justify-content: space-between;">
                         <a href="mailto:luca.gaddi90@gmail.com">luca.gaddi90@gmail.com</a>
-                        <button style="margin-top: 20px; float: right; text-align: center" type="button"
+                        <button onclick="openPopup()" style="margin-top: 20px; float: right; text-align: center" type="button"
                             class="btn btn-dark">
                             <div style="display: flex">
                                 <p style="font-size: smaller; margin-right: 5px;">SEND</p>

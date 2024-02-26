@@ -61,3 +61,20 @@ var swiper = new Swiper(".slide-customer", {
         },
     },
 });
+
+
+// Metodi PopUp
+
+let popup = document.getElementById("popup")
+let textarea = document.getElementById("textarea")
+let inputs = document.querySelectorAll('input')
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+    inputs.forEach(input => input.value = '');
+    textarea.value = '';
+}
